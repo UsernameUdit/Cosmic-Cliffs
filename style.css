@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+background: black;
+height: 12.5vh;
+position: sticky;
+top: 0px;
+
+}
+ul{
+display: flex;
+justify-content: right;
+align-items: right;
+}
+ul li{
+display: inline-block;
+padding: 25px;
+}
+.logo{
+float: left;
+
+}
+
+@media screen and (min-width:800px){
+nav .menu{
+    display: none;
+}
+}
+
+@media screen and (max-width:800px) {
+
+
+.menubutton{
+    background-color: rgb(0, 0, 0);
+    box-shadow:  5px 5px 5px rgb(0, 132, 255);
+    border-radius: 5px;
+    border: 2px solid rgb(0, 132, 255);
+    font-family: 'Bruno Ace SC', cursive;
+    height: 36px;
+    color: rgb(250, 251, 255);
+}
+.menu{
+    
+    position: relative;
+    float: right;
+    margin-right: 60px;
+    margin-top: -40px;
+    font-family: 'Bruno Ace SC', cursive;
+
+    
+}
+.items{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px rgb(0, 132, 255);
+    background-color: black;
+    transition: all 0.6s ease-in-out;
+    
+}
+.items a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+}
+.items a:hover{
+    background-color: rgb(0, 132, 255);
+}
+.menu:hover .items{display: block;}
+ul li a{
+    display: none;
+}
+}
+ul li a{
+list-style: none;
+text-decoration: none;
+color: white;
+font-family: 'Bruno Ace SC', cursive;
+font-size: 1.1em;
+}
+
+.border{
+height: 1vh;
+animation: infinite 10s rgb;
+
+}
+@keyframes rgb {
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: rgb(255, 120, 120);
+    }
+    40%{
+        background-color: rgb(255, 175, 71);
+    }
+    50%{
+        background-color: rgb(16, 147, 255);
+    }
+    60%{
+        background-color: rgb(136, 9, 255);
+    }
+    80%{
+        background-color: rgb(46, 9, 255);
+    }
+    100%{
+        background-color: rgb(255, 152, 152);
+    }
+    
+    
+}
+.content{
+    background-image: url("Carina2.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcometext {
+font-size: 3em;
+font-family: 'Bruno Ace SC', cursive;
+animation: typeanimate 10s infinite ease-in-out;
+padding: 1.5vh;
+}
+@keyframes typeanimate {
+    0%{
+        color:plum ;
+    }
+    20%{
+        color:rgb(255, 45, 45);
+    }
+    40%{
+        color:rgb(255, 94, 94);
+    }
+    60%{
+        color:rgb(255, 72, 0);
+    }
+    70%{
+        color:rgb(255, 158, 79);
+    }
+    85%{
+        color:rgb(0, 140, 255);
+    }
+    95%{
+        color:rgb(124, 77, 255);
+    }
+    100%{
+        color:rgb(255, 0, 128);
+    }
+
+}
+.about{
+    background: rgb(8,7,7);
+    background: radial-gradient(circle, rgb(169, 116, 185) 32%, rgb(255, 101, 101) 81%);  
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about p{
+    /* border: 2px solid aqua; */
+    color: bisque;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 1.5em;
+    /* animation: typeanimate 10s infinite ease-in-out; */
+    padding: 3vh;
+}
+.about p:hover{
+    animation: typeanimate 10s infinite ease-in-out;
+}
+footer{
+background-color: rgb(0, 0, 0);
+padding: 6vh;
+}
+footer p{
+color: rgb(255, 98, 98);
+}
+footer p a{
+text-decoration: none;
+color: rgb(255, 98, 98);
+}
+footer p a:hover{
+color: rgb(98, 148, 255);
+}
+.end{
+display: grid;
+grid-template-columns: auto auto;
+}
+.b1{
+    
+    height: 1vh;
+    animation:infinite rgb 8s;
+}
+.b2{
+    height: 1vh;
+    animation: infinite rgb2 8s;
+}
+@keyframes rgb2 {
+    0%{
+        background-color: rgb(255, 55, 55);
+    }
+    20%{
+        background-color: rgb(147, 147, 255);
+    }
+    50%{
+        background-color: rgb(255, 65, 65);
+    }            
+    70%{
+        background-color: rgb(65, 179, 255);
+    }            
+
+    80%{
+        background-color: rgb(255, 98, 124);
+    }
+    100%{
+        background-color: rgb(118, 118, 255);
+    }
+}
+@keyframes rgb {
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: rgb(255, 120, 120);
+    }
+    40%{
+        background-color: rgb(255, 175, 71);
+    }
+    50%{
+        background-color: rgb(16, 147, 255);
+    }
+    60%{
+        background-color: rgb(136, 9, 255);
+    }
+    80%{
+        background-color: rgb(46, 9, 255);
+    }
+    100%{
+        background-color: rgb(255, 152, 152);
+    }
+    
+    
+}
